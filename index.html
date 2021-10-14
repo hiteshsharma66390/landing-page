@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advantage Club</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+      integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"
+      integrity="sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="home-container">
+      <header id="ac-header" class="full-width flexBox">
+        <div class="left-header flexBox">
+          <img
+            id="ac-logo"
+            src="https://cdn2.workadvantage.in/images/img/image/870236/e4f154c82e.png"
+            alt="advantage-club"
+          />
+        </div>
+        <div class="right-header flexBox">
+          <ul class="nav-menu flexBox full-width">
+            <div class="dropdown nav-item">
+              <div
+                class="dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Solutions
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="#">Rewards & Recognition</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Perks</a></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Sales Contest & Automated Incentives</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Advantage Card</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Early Wage Advantage</a>
+                </li>
+                <li><a class="dropdown-item" href="#">communities</a></li>
+              </ul>
+            </div>
+            <a class="nav-item">Resources</a>
+            <a class="nav-item">About Us</a>
+            <a class="nav-item">Contact Us</a>
+            <a class="nav-item">Login</a>
+            <a class="nav-item">Sign Up</a>
+          </ul>
+        </div>
+      </header>
+      <div class="cover-wrapper full-width flexBox">
+        <div class="cover-left-container">
+          <div class="cover-left-top-container">
+            Discover an <span class="key-word">Employee Engagement</span> and
+            Financial Wellness platform that goes
+            <span class="key-word">beyond satisfaction</span>!
+          </div>
+          <div class="cover-left-bottom-container">
+            Advantage Club makes Reward & Recognition easy and fun, fostering
+            community with everything you need to make work rewarding for
+            today’s global workforce. You can unburden your people from consumer
+            debt and show that you value them by giving Early Wage Access.
+          </div>
+          <div class="button-container flexBox">
+            <div class="button-wrapper active flexBox">Request a Demo</div>
+            <div class="button-wrapper flexBox" id="learn-more-btn">
+              Learn More
+            </div>
+          </div>
+        </div>
+        <div class="cover-right-container">
+          <div class="cover-right-image-container">
+            <img
+              class="cover-image"
+              src="https://cdn.pixabay.com/photo/2017/08/31/11/43/man-2700445_1280.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="corporate-container full-width flexBox" data-aos="zoom-in">
+        <h3 class="sub-title">Running successfully in 370+ corporates</h3>
+        <div class="corporate-slider full-width"></div>
+      </div>
+      <div class="product-container full-width" data-aos="zoom-in">
+        <h3 class="product-heading">
+          Redefine <span class="key-word-primary">Employee Engagement</span> and
+          Wellness<br />
+          with our <span class="key-word-primary">All-in-one</span> platform
+        </h3>
+        <div class="product-wrapper full-width flexBox">
+          <div class="product-left-wrapper flexBox">
+            <div
+              class="product-row full-width flexBox active-row"
+              onclick="selectProduct(event)"
+            >
+              <div class="product-icon-wrappper">
+                <div class="product-icon"></div>
+              </div>
+              <div class="product-name">Rewards & Recognition</div>
+              <div class="product-bar"></div>
+            </div>
+            <div
+              class="product-row full-width flexBox"
+              onclick="selectProduct(event)"
+            >
+              <div class="product-icon-wrappper">
+                <div class="product-icon"></div>
+              </div>
+              <div class="product-name">Perks</div>
+              <div class="product-bar"></div>
+            </div>
+            <div
+              class="product-row full-width flexBox"
+              onclick="selectProduct(event)"
+            >
+              <div class="product-icon-wrappper">
+                <div class="product-icon"></div>
+              </div>
+              <div class="product-name">
+                Sales contests &<br />
+                automated incentives
+              </div>
+              <div class="product-bar"></div>
+            </div>
+            <div
+              class="product-row full-width flexBox"
+              onclick="selectProduct(event)"
+            >
+              <div class="product-icon-wrappper">
+                <div class="product-icon"></div>
+              </div>
+              <div class="product-name">Advantage Card</div>
+              <div class="product-bar"></div>
+            </div>
+            <div
+              class="product-row full-width flexBox"
+              onclick="selectProduct(event)"
+            >
+              <div class="product-icon-wrappper">
+                <div class="product-icon"></div>
+              </div>
+              <div class="product-name">Early Wage Advantage</div>
+              <div class="product-bar"></div>
+            </div>
+            <div
+              class="product-row full-width flexBox"
+              onclick="selectProduct(event)"
+            >
+              <div class="product-icon-wrappper">
+                <div class="product-icon"></div>
+              </div>
+              <div class="product-name">Communities</div>
+              <div class="product-bar"></div>
+            </div>
+          </div>
+          <div class="product-right-wrapper"></div>
+        </div>
+      </div>
+      <div class="country-container full-width flexBox" data-aos="zoom-in">
+        <h3 class="title">Live in 70+ Countries</h3>
+        <div class="contry-wrapper full-width flexBox">
+          <div class="country">
+            <img
+              src="https://cdn0.workadvantage.in/images/img/image/869723/095347cda4.png"
+              alt="india"
+            />
+          </div>
+          <div class="country">
+            <img
+              src="https://cdn1.workadvantage.in/images/img/image/869720/53b680b434.png"
+              alt="india"
+            />
+          </div>
+          <div class="country">
+            <img
+              src="https://cdn2.workadvantage.in/images/img/image/869721/d157c60bf0.png"
+              alt="india"
+            />
+          </div>
+          <div class="country">
+            <img
+              src="https://cdn0.workadvantage.in/images/img/image/869722/6974c16652.png"
+              alt="india"
+            />
+          </div>
+          <div class="country">
+            <img
+              src="https://cdn3.workadvantage.in/images/img/image/869719/bb3b294fad.png"
+              alt="india"
+            />
+          </div>
+          <div class="country">
+            <img
+              src="https://cdn0.workadvantage.in/images/img/image/869724/16996fd0d5.png"
+              alt="india"
+            />
+          </div>
+          <div class="country">
+            <img
+              src="https://cdn1.workadvantage.in/images/img/image/869725/cd2fe45e27.png"
+              alt="india"
+            />
+          </div>
+          <div class="country">
+            <img
+              src="https://cdn0.workadvantage.in/images/img/image/869726/0fcdb8ff9e.png"
+              alt="india"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-container full-width flexBox" data-aos="zoom-in">
+        <h3 class="product-heading">
+          Check what our
+          <span class="key-word-primary">Customers are Saying</span>
+        </h3>
+        <h4 class="product-sub-heading">
+          You can relay on our amazing features list and also our customer
+          services will be
+        </h4>
+        <!-- code for image slider starts here-->
+        <div class="testimonial-area">
+          <div class="container">
+            <div class="row">
+              <div
+                class="
+                  col-lg-12
+                  col-lg-offset-0
+                  col-md-10
+                  col-md-offset-1
+                  col-sm-10
+                  col-sm-offset-1
+                "
+              >
+                <div class="row">
+                  <div
+                    class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2"
+                    style="width: 100%"
+                  >
+                    <div
+                      class="testimonial-image-slider slider-nav text-center"
+                    >
+                      <div class="sin-testiImage">
+                        <img
+                          src="data:image/jpeg;base64,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"
+                        />
+                      </div>
+                      <div class="sin-testiImage">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
+                        />
+                      </div>
+                      <div class="sin-testiImage">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vM2qsCjUgRSoPweeW40FyVcLFrjIc-bbuw&usqp=CAU"
+                        />
+                      </div>
+                      <div class="sin-testiImage">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB_tSupeOZhLe53K9dNH9Bro2HdfZjv9CQQ&usqp=CAU"
+                        />
+                      </div>
+                      <div class="sin-testiImage">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZk49_WlEqjKsGVcP8QtTz4Q24hLx0vA2QQQ&usqp=CAU"
+                        />
+                      </div>
+                      <div class="sin-testiImage">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSocV_XuUy3hAY10vgfXXm_FtL3JXwSAbrYig&usqp=CAU"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-text-slider slider-for text-center">
+                  <div class="sin-testiText">
+                    <h2>Shabab Ahmed</h2>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly believable.
+                    </p>
+                  </div>
+                  <div class="sin-testiText">
+                    <h2>Soyong Sourav</h2>
+                    <p>
+                      Nam nec tellus a odio tincidunt This lorem is Photoshop's
+                      version of Lorem Ipsum. Proin gravida nibh vel velit
+                      auctor aliquet. Aenean nisi sollicitudin, lorem quis
+                      bibendum auctor, nisi elit consequat ipsum gravida.
+                    </p>
+                  </div>
+                  <div class="sin-testiText">
+                    <h2>Joker Buzz</h2>
+                    <p>
+                      Nam nec tellus a odio tincidunt This is Photoshop's
+                      version of Lorem Ipsum. Proin gravida nibh vel velit
+                      auctor aliquet. Aenean tincidunt sollicitudin, lorem quis
+                      bibendum auctor, nisi elit consequat ipsum Photoshop.
+                    </p>
+                  </div>
+                  <div class="sin-testiText">
+                    <h2>M S Nawaz</h2>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly believable.
+                    </p>
+                  </div>
+                  <div class="sin-testiText">
+                    <h2>Chowchilla Madera</h2>
+                    <p>
+                      Nam nec tellus a odio tincidunt This is Photoshop's
+                      version of Lorem Ipsum. Proin gravida nibh vel velit
+                      auctor aliquet. Aenean sollicitudin, aliquet lorem quis
+                      tellus velit bibendum auctor, nisi elit consequat ipsum
+                    </p>
+                  </div>
+                  <div class="sin-testiText">
+                    <h2>Kattie Luis</h2>
+                    <p>
+                      Nam nec tellus a odio tincidunt This is Photoshop's
+                      version of Lorem Ipsum. Proin gravida nibh vel velit
+                      auctor aliquet. Aenean sollicitudin, lorem gravida
+                      tincidunt quis bibendum auctor, nisi elit consequat ipsum
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- code for image slider ends here-->
+      </div>
+      <div class="blogs-container full-width flexBox" data-aos="zoom-in">
+        <h3 class="product-heading">Blogs</h3>
+        <h4 class="product-sub-heading">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor"
+        </h4>
+        <div class="blogs-wrapper full-width flexBox">
+          <div class="blog"></div>
+          <div class="blog"></div>
+          <div class="blog"></div>
+        </div>
+        <div class="see-all-blogs flexBox">See All Blogs</div>
+      </div>
+      <div class="newsroom-container full-width flexBox" data-aos="zoom-in">
+        <h3 class="product-heading">
+          News <span class="key-word-primary">Room</span>
+        </h3>
+        <h4 class="product-sub-heading">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor"
+        </h4>
+        <div class="news-wrapper full-width flexBox">
+          <div class="news flexBox">
+            <div class="news-image-container">
+              <img
+                src="https://www.avis.co.in/blog/wp-content/uploads/2017/12/Business-Standard-logo-1.png"
+                alt=""
+              />
+            </div>
+            <div class="news-desc-container full-width">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </div>
+            <div class="read-more flexBox full-width">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="news flexBox">
+            <div class="news-image-container">
+              <img
+                src="https://www.avis.co.in/blog/wp-content/uploads/2017/12/Business-Standard-logo-1.png"
+                alt=""
+              />
+            </div>
+            <div class="news-desc-container full-width">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </div>
+            <div class="read-more flexBox full-width">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="news flexBox">
+            <div class="news-image-container">
+              <img
+                src="https://www.avis.co.in/blog/wp-content/uploads/2017/12/Business-Standard-logo-1.png"
+                alt=""
+              />
+            </div>
+            <div class="news-desc-container full-width">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </div>
+            <div class="read-more flexBox full-width">
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter-container flexBox full-width" data-aos="zoom-in">
+        <div class="newsletter flexBox">
+          <div class="newsletter-title">
+            Subscribe to our Newsletter<br />
+            for Updates
+          </div>
+          <div class="newsletter-info">
+            Be a part of us and get the latest Information
+          </div>
+          <div class="subscribe-container">
+            <form action="#" class="subscribe-form">
+              <div class="input-row flexBox">
+                <input
+                  class="email-input"
+                  type="text"
+                  placeholder="Enter your email"
+                />
+                <button class="submit-newsletter-btn flexBox" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer id="ac-footer" class="full-width flexBox" data-aos="zoom-in">
+        <div class="footer-content-container full-width flexBox">
+          <div class="footer-column-thick">
+            <div class="column-title">
+              <img
+                src="https://cdn2.workadvantage.in/images/img/image/870236/e4f154c82e.png"
+                alt="advantage-club"
+              />
+            </div>
+            <div class="column-desc">
+              We envision a world where employees are<br />highly engaged and
+              very happy at work.<br />Join us in our journey today!
+            </div>
+          </div>
+          <div class="footer-column flexBox">
+            <div class="column-title">About</div>
+            <a href="#" class="footer-link">Company</a>
+            <a href="#" class="footer-link">Teams</a>
+            <a href="#" class="footer-link">Career</a>
+            <a href="#" class="footer-link">Contact Us</a>
+            <div class="column-title">Resources</div>
+            <a href="#" class="footer-link">Video Session</a>
+            <a href="#" class="footer-link">FAQs</a>
+          </div>
+          <div class="footer-column flexBox">
+            <div class="column-title">Legal</div>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Refund Policy</a>
+            <a href="#" class="footer-link">Terms of Use</a>
+          </div>
+          <div class="footer-column-thick">
+            <div class="column-title">Download the Advantage Club App</div>
+            <div class="column-desc">
+              Fast, Simple and Delightful.<br />All it takes is 30 seconds to
+              download.
+            </div>
+            <div class="app-download-container flexBox">
+              <a
+                target="_blank"
+                class="app-link"
+                href="https://play.google.com/store/apps/details?id=activity.workadvantage.com.workadvantage"
+                style="margin-right: 21px"
+              >
+                <img
+                  class="PlayStoreSmall"
+                  src="https://cdn3.workadvantage.in/images/img/image/19648/c7088c558a.svg"
+                  alt="logo"
+                  target="_blank"
+                />
+              </a>
+              <a
+                target="_blank"
+                class="app-link"
+                href="https://itunes.apple.com/in/app/work-advantage/id1003770310?mt=8"
+              >
+                <img
+                  class="PlayStoreSmall"
+                  src="https://cdn2.workadvantage.in/images/img/image/19647/3c9c0eb512.svg"
+                  alt="logo"
+                  target="_blank"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-container">
+          Copyright &copy; 2021 Advantage Club. All rights reserved.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
