@@ -50,22 +50,23 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  justify-content: center;
+}
+.header-wrapper {
+  width: 1092px;
 }
 .left-header {
-  width: 35vw;
   height: 100%;
   align-items: center;
   float: left;
 }
 .right-header {
-  width: 63vw;
   height: 100%;
   float: right;
-  padding-right: 4.5em;
 }
 .nav-menu {
   height: 100%;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
 }
 .nav-item {
@@ -75,6 +76,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
+  margin-right: 24px;
 }
 .nav-item:hover {
   color: #098c94;
@@ -82,11 +84,14 @@ body {
 .cover-wrapper {
   min-height: 539px;
   background: #dfeeeb;
+  justify-content: center;
+}
+.cover-section {
+  width: 1092px;
 }
 #ac-logo {
   width: 176px;
   height: 24px;
-  margin-left: 134px;
   cursor: pointer;
 }
 .cover-left-container,
@@ -96,7 +101,6 @@ body {
 }
 .cover-left-container {
   width: 40%;
-  padding-left: 137px;
   color: #3d3d3d;
 }
 .cover-left-top-container {
@@ -131,8 +135,7 @@ body {
   height: 421px;
   margin-top: 67px;
   float: right;
-  margin-right: 128px;
-  text-align: center;
+  text-align: right;
 }
 .cover-image {
   height: 100%;
@@ -240,7 +243,7 @@ body {
   height: 100%;
 }
 .testimonial-container {
-  height: 647px;
+  min-height: 647px;
   flex-direction: column;
   padding: 65px 154px;
 }
@@ -530,12 +533,19 @@ body {
   .blog {
     margin-right: 0;
   }
+  .cover-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  .sin-testiText p {
+    font-size: 16px !important;
+  }
 }
 /* css for image slider */
 .testimonial-area {
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
-  padding: 95px 0 82px;
+  padding: 20px 0 82px;
   position: relative;
 }
 .testimonial-area:after {
@@ -553,6 +563,9 @@ body {
 .slick-list {
   margin: 0 5px;
 }
+.slick-slide {
+  width: 135px;
+}
 .sin-testiImage {
   display: inline-block;
   margin-bottom: 11px;
@@ -564,11 +577,11 @@ body {
   border-radius: 50%;
   cursor: pointer;
   display: inline-block !important;
-  height: 80px;
+  height: 70px;
   margin-bottom: 30px;
   margin-top: 36px;
   outline: 0 none;
-  width: 80px;
+  width: 70px;
 }
 .sin-testiImage.slick-current {
   opacity: 1;
@@ -601,8 +614,9 @@ body {
 }
 .sin-testiText p {
   margin-top: 22px;
-  color: black;
-  line-height: 24px;
+  color: #000000;
+  font-size: 22px;
+  line-height: 30px;
 }
 .slick-prev,
 .slick-next {
@@ -652,4 +666,13 @@ body {
 .testimonial-area:hover .slick-next:before {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.sin-testiText h2 {
+  font-size: 24px;
+  color: #03014c;
+  font-weight: bold;
+}
+.sin-testiText h4 {
+  font-size: 16px;
+  color: rgba(3, 1, 76, 0.6);
 }

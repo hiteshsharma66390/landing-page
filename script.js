@@ -32,17 +32,19 @@ $(".slider-nav").slick({
   slidesToScroll: 1,
   asNavFor: ".slider-for",
   dots: false,
-  arrows: true,
+  arrows: false,
   centerMode: true,
   focusOnSelect: true,
   centerPadding: "10px",
+  variableWidth: true,
   responsive: [
     {
       breakpoint: 450,
       settings: {
         dots: false,
-        slidesToShow: 3,
+        slidesToShow: 1,
         centerPadding: "0px",
+        centerMode: true,
       },
     },
     {
@@ -51,7 +53,7 @@ $(".slider-nav").slick({
         autoplay: true,
         dots: false,
         slidesToShow: 1,
-        centerMode: false,
+        centerMode: true,
       },
     },
   ],
