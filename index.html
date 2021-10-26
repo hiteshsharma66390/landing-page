@@ -40,6 +40,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -91,118 +98,253 @@
           </div>
         </div>
       </header>
-      <div class="cover-wrapper full-width flexBox">
-        <div class="cover-section flexBox">
-          <div class="cover-left-container">
-            <div class="cover-left-top-container">
-              Discover an <span class="key-word">Employee Engagement</span> and
-              Financial Wellness platform that goes
-              <span class="key-word">beyond satisfaction</span>!
+      <div class="cover-corporate-wrapper full-width flexBox">
+        <div class="cover-wrapper full-width flexBox">
+          <div class="cover-section flexBox">
+            <div class="cover-left-container flexBox">
+              <div class="cover-left-top-container">
+                Discover an
+                <span class="key-word">Employee Engagement</span> and Financial
+                Wellness platform that goes
+                <span class="key-word">beyond satisfaction</span>!
+              </div>
+              <div class="cover-left-bottom-container">
+                Advantage Club makes Reward & Recognition easy and fun,
+                fostering community with everything you need to make work
+                rewarding for today’s global workforce. You can unburden your
+                people from consumer debt and show that you value them by giving
+                Early Wage Access.
+              </div>
+              <div class="button-container flexBox">
+                <div class="button-wrapper active flexBox">Request a Demo</div>
+                <div class="button-wrapper flexBox" id="learn-more-btn">
+                  Learn More
+                </div>
+              </div>
             </div>
-            <div class="cover-left-bottom-container">
-              Advantage Club makes Reward & Recognition easy and fun, fostering
-              community with everything you need to make work rewarding for
-              today’s global workforce. You can unburden your people from
-              consumer debt and show that you value them by giving Early Wage
-              Access.
-            </div>
-            <div class="button-container flexBox">
-              <div class="button-wrapper active flexBox">Request a Demo</div>
-              <div class="button-wrapper flexBox" id="learn-more-btn">
-                Learn More
+            <div class="cover-right-container">
+              <div class="cover-right-image-container">
+                <img
+                  class="cover-image"
+                  src="./assets/Landing hero Banner.png"
+                />
               </div>
             </div>
           </div>
-          <div class="cover-right-container">
-            <div class="cover-right-image-container">
-              <img
-                class="cover-image"
-                src="https://cdn.pixabay.com/photo/2017/08/31/11/43/man-2700445_1280.png"
-              />
+        </div>
+        <div class="corporate-container full-width flexBox">
+          <h3 class="sub-title">Running successfully in 370+ corporates</h3>
+          <div class="corporate-slider full-width flexBox">
+            <div class="corporate__logo">
+              <div class="corporate__image">
+                <img
+                  src="https://cdn3.workadvantage.in/images/img/image/870241/2b9022226d.png"
+                  alt=""
+                />
+              </div>
+              <div class="corporate__image">
+                <img
+                  src="https://cdn3.workadvantage.in/images/img/image/870239/e0ec88b545.png"
+                  alt=""
+                />
+              </div>
+              <div class="corporate__image">
+                <img
+                  src="https://cdn0.workadvantage.in/images/img/image/870240/34a7bb7227.png"
+                  alt=""
+                />
+              </div>
+              <div class="corporate__image">
+                <img
+                  src="https://cdn2.workadvantage.in/images/img/image/869804/487c2432ba.png"
+                  alt=""
+                />
+              </div>
+              <div class="corporate__image">
+                <img
+                  src="https://cdn3.workadvantage.in/images/img/image/870241/2b9022226d.png"
+                  alt=""
+                />
+              </div>
+              <div class="corporate__image">
+                <img
+                  src="https://cdn1.workadvantage.in/images/img/image/870244/7a8962b171.png"
+                  alt=""
+                />
+              </div>
+              <div class="corporate__image">
+                <img
+                  src="https://cdn1.workadvantage.in/images/img/image/870242/0440ba7b6b.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
+          <hr />
         </div>
       </div>
-      <div class="corporate-container full-width flexBox" data-aos="zoom-in">
-        <h3 class="sub-title">Running successfully in 370+ corporates</h3>
-        <div class="corporate-slider full-width"></div>
-      </div>
-      <div class="product-container full-width" data-aos="zoom-in">
+      <div class="product-container full-width">
         <h3 class="product-heading">
           Redefine <span class="key-word-primary">Employee Engagement</span> and
           Wellness<br />
           with our <span class="key-word-primary">All-in-one</span> platform
         </h3>
+        <!-- <div class="product-wrapper full-width flexBox">
+          <div class="product-content-wrapper flexBox">
+            <div class="product-left-wrapper flexBox">
+              <div
+                class="product-row full-width flexBox active-row"
+                onclick="selectProduct(event)"
+              >
+                <div class="product-icon-wrappper">
+                  <div class="product-icon"></div>
+                </div>
+                <div class="product-name">Rewards & Recognition</div>
+                <div class="product-bar"></div>
+              </div>
+              <div
+                class="product-row full-width flexBox"
+                onclick="selectProduct(event)"
+              >
+                <div class="product-icon-wrappper">
+                  <div class="product-icon"></div>
+                </div>
+                <div class="product-name">Perks</div>
+                <div class="product-bar"></div>
+              </div>
+              <div
+                class="product-row full-width flexBox"
+                onclick="selectProduct(event)"
+              >
+                <div class="product-icon-wrappper">
+                  <div class="product-icon"></div>
+                </div>
+                <div class="product-name">
+                  Sales contests &<br />
+                  automated incentives
+                </div>
+                <div class="product-bar"></div>
+              </div>
+              <div
+                class="product-row full-width flexBox"
+                onclick="selectProduct(event)"
+              >
+                <div class="product-icon-wrappper">
+                  <div class="product-icon"></div>
+                </div>
+                <div class="product-name">Advantage Card</div>
+                <div class="product-bar"></div>
+              </div>
+              <div
+                class="product-row full-width flexBox"
+                onclick="selectProduct(event)"
+              >
+                <div class="product-icon-wrappper">
+                  <div class="product-icon"></div>
+                </div>
+                <div class="product-name">Early Wage Advantage</div>
+                <div class="product-bar"></div>
+              </div>
+              <div
+                class="product-row full-width flexBox"
+                onclick="selectProduct(event)"
+              >
+                <div class="product-icon-wrappper">
+                  <div class="product-icon"></div>
+                </div>
+                <div class="product-name">Communities</div>
+                <div class="product-bar"></div>
+              </div>
+            </div>
+            <div class="product-right-wrapper"></div>
+          </div>
+        </div> -->
         <div class="product-wrapper full-width flexBox">
-          <div class="product-left-wrapper flexBox">
-            <div
-              class="product-row full-width flexBox active-row"
-              onclick="selectProduct(event)"
-            >
-              <div class="product-icon-wrappper">
-                <div class="product-icon"></div>
+          <div class="product-content-wrapper flexBox">
+            <div class="product flexBox" id="tilt">
+              <div class="product-image">
+                <img src="./assets/Rewards & Recognition.png" alt="" />
               </div>
-              <div class="product-name">Rewards & Recognition</div>
-              <div class="product-bar"></div>
+              <div class="product-title">Rewards & Recognition</div>
+              <div class="product-des">
+                Run automated employee reward programs that power business
+                results. Deliver a reward experience that is fun & timely.
+              </div>
+              <div class="product-learn-more">
+                <a href=""> Learn More<i class="fa fa-arrow-right"></i> </a>
+              </div>
             </div>
-            <div
-              class="product-row full-width flexBox"
-              onclick="selectProduct(event)"
-            >
-              <div class="product-icon-wrappper">
-                <div class="product-icon"></div>
+            <div class="product flexBox">
+              <div class="product-image">
+                <img src="./assets/Sales Contest.png" alt="" />
               </div>
-              <div class="product-name">Perks</div>
-              <div class="product-bar"></div>
+              <div class="product-title">
+                Sales contests & Automated incentives
+              </div>
+              <div class="product-des">
+                Run automated employee reward programs that power business
+                results. Deliver a reward experience that is fun & timely.
+              </div>
+              <div class="product-learn-more">
+                <a href=""> Learn More<i class="fa fa-arrow-right"></i> </a>
+              </div>
             </div>
-            <div
-              class="product-row full-width flexBox"
-              onclick="selectProduct(event)"
-            >
-              <div class="product-icon-wrappper">
-                <div class="product-icon"></div>
+            <div class="product flexBox">
+              <div class="product-image">
+                <img src="./assets/EWA.png" alt="" />
               </div>
-              <div class="product-name">
-                Sales contests &<br />
-                automated incentives
+              <div class="product-title">Early Wage Advantage</div>
+              <div class="product-des">
+                Run automated employee reward programs that power business
+                results. Deliver a reward experience that is fun & timely.
               </div>
-              <div class="product-bar"></div>
+              <div class="product-learn-more">
+                <a href=""> Learn More<i class="fa fa-arrow-right"></i> </a>
+              </div>
             </div>
-            <div
-              class="product-row full-width flexBox"
-              onclick="selectProduct(event)"
-            >
-              <div class="product-icon-wrappper">
-                <div class="product-icon"></div>
+            <div class="product flexBox">
+              <div class="product-image">
+                <img src="./assets/Perks.png" alt="" />
               </div>
-              <div class="product-name">Advantage Card</div>
-              <div class="product-bar"></div>
+              <div class="product-title">Perks</div>
+              <div class="product-des">
+                Run automated employee reward programs that power business
+                results. Deliver a reward experience that is fun & timely.
+              </div>
+              <div class="product-learn-more">
+                <a href=""> Learn More<i class="fa fa-arrow-right"></i> </a>
+              </div>
             </div>
-            <div
-              class="product-row full-width flexBox"
-              onclick="selectProduct(event)"
-            >
-              <div class="product-icon-wrappper">
-                <div class="product-icon"></div>
+            <div class="product flexBox">
+              <div class="product-image">
+                <img src="./assets/Advantage Card.png" alt="" />
               </div>
-              <div class="product-name">Early Wage Advantage</div>
-              <div class="product-bar"></div>
+              <div class="product-title">Advantage Card</div>
+              <div class="product-des">
+                Run automated employee reward programs that power business
+                results. Deliver a reward experience that is fun & timely.
+              </div>
+              <div class="product-learn-more">
+                <a href=""> Learn More<i class="fa fa-arrow-right"></i> </a>
+              </div>
             </div>
-            <div
-              class="product-row full-width flexBox"
-              onclick="selectProduct(event)"
-            >
-              <div class="product-icon-wrappper">
-                <div class="product-icon"></div>
+            <div class="product flexBox">
+              <div class="product-image">
+                <img src="./assets/Communites.png" alt="" />
               </div>
-              <div class="product-name">Communities</div>
-              <div class="product-bar"></div>
+              <div class="product-title">Communities</div>
+              <div class="product-des">
+                Run automated employee reward programs that power business
+                results. Deliver a reward experience that is fun & timely.
+              </div>
+              <div class="product-learn-more">
+                <a href=""> Learn More<i class="fa fa-arrow-right"></i> </a>
+              </div>
             </div>
           </div>
-          <div class="product-right-wrapper"></div>
         </div>
       </div>
-      <div class="country-container full-width flexBox" data-aos="zoom-in">
+      <div class="country-container full-width flexBox">
         <h3 class="title">Live in 70+ Countries</h3>
         <div class="contry-wrapper full-width flexBox">
           <div class="country">
@@ -255,7 +397,7 @@
           </div>
         </div>
       </div>
-      <div class="testimonial-container full-width flexBox" data-aos="zoom-in">
+      <div class="testimonial-container full-width flexBox">
         <h3 class="product-heading">
           Check what our
           <span class="key-word-primary">Customers are Saying</span>
@@ -263,11 +405,17 @@
         <h4 class="product-sub-heading">
           You can relay on our amazing features list and also our customer
           services will be
+          <!-- testimonial floating elements starts here -->
+          <!-- <div class="right-floating-rectangle" id="bounce"></div> -->
+
+          <!-- testimonial floating elements starts here -->
         </h4>
         <!-- code for image slider starts here-->
         <div class="testimonial-area">
           <div class="container">
-            <div class="row">
+            <div class="row" style="position: relative">
+              <!-- <div class="quote-mark quote-left">“</div>
+              <div class="quote-mark quote-right">“</div> -->
               <div
                 class="
                   col-lg-12
@@ -400,30 +548,28 @@
         </div>
         <!-- code for image slider ends here-->
       </div>
-      <div class="blogs-container full-width flexBox">
-        <h3 class="product-heading" data-aos="zoom-in">Blogs</h3>
-        <h4 class="product-sub-heading" data-aos="zoom-in">
+      <!-- <div class="blogs-container full-width flexBox">
+        <h3 class="product-heading">Blogs</h3>
+        <h4 class="product-sub-heading">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor"
         </h4>
-        <div class="blogs-wrapper full-width flexBox" data-aos="zoom-in">
+        <div class="blogs-wrapper full-width flexBox">
           <div class="blog"></div>
           <div class="blog"></div>
           <div class="blog"></div>
         </div>
-        <div class="see-all-blogs flexBox" data-aos="zoom-in">
-          See All Blogs
-        </div>
-      </div>
+        <div class="see-all-blogs flexBox">See All Blogs</div>
+      </div> -->
       <div class="newsroom-container full-width flexBox">
-        <h3 class="product-heading" data-aos="zoom-in">
+        <h3 class="product-heading">
           News <span class="key-word-primary">Room</span>
         </h3>
-        <h4 class="product-sub-heading" data-aos="zoom-in">
+        <h4 class="product-sub-heading">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor"
         </h4>
-        <div class="news-wrapper full-width flexBox" data-aos="zoom-in">
+        <div class="news-wrapper full-width flexBox">
           <div class="news flexBox">
             <div class="news-image-container">
               <img
@@ -432,47 +578,57 @@
               />
             </div>
             <div class="news-desc-container full-width">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              "Advantage Club re-inventing USD 3 Billion HR Industry in India
             </div>
             <div class="read-more flexBox full-width">
-              <a href="#">Read More</a>
+              <a
+                href="https://www.business-standard.com/article/news-ani/advantage-club-re-inventing-usd-3-billion-hr-industry-in-india-119102401224_1.html"
+                target="_blank"
+                >Read More</a
+              >
             </div>
           </div>
           <div class="news flexBox">
             <div class="news-image-container">
               <img
-                src="https://www.avis.co.in/blog/wp-content/uploads/2017/12/Business-Standard-logo-1.png"
+                src="https://cdn1.workadvantage.in/images/img/image/869751/949bd553e1.png"
                 alt=""
               />
             </div>
             <div class="news-desc-container full-width">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              "Advantage Club reports GMV of Rs 100 crore in FY20
             </div>
             <div class="read-more flexBox full-width">
-              <a href="#">Read More</a>
+              <a
+                href="https://www.vccircle.com/growx-ventures-leads-pre-series-a-funding-in-hr-tech-startup-advantage-club"
+                target="_blank"
+                >Read More</a
+              >
             </div>
           </div>
           <div class="news flexBox">
             <div class="news-image-container">
               <img
-                src="https://www.avis.co.in/blog/wp-content/uploads/2017/12/Business-Standard-logo-1.png"
+                src="https://cdn3.workadvantage.in/images/img/image/869757/5e32d92b58.jpg"
                 alt=""
               />
             </div>
             <div class="news-desc-container full-width">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              "With Advantage Club, companies' employee benefits now include
+              discount coupons and loyalty points
             </div>
             <div class="read-more flexBox full-width">
-              <a href="#">Read More</a>
+              <a
+                href="https://yourstory.com/2018/01/advantage-club-is-helping-firms-redefine-employee-benefits-and-corporate-discounts?utm_pageloadtype=scroll"
+                target="_blank"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
       </div>
       <div class="newsletter-container flexBox full-width">
-        <div class="newsletter flexBox" data-aos="zoom-in">
+        <div class="newsletter flexBox">
           <div class="newsletter-title">
             Subscribe to our Newsletter<br />
             for Updates
@@ -497,10 +653,7 @@
         </div>
       </div>
       <footer id="ac-footer" class="full-width flexBox">
-        <div
-          class="footer-content-container full-width flexBox"
-          data-aos="zoom-in"
-        >
+        <div class="footer-content-container full-width flexBox">
           <div class="footer-column-thick">
             <div class="column-title">
               <img
@@ -511,6 +664,21 @@
             <div class="column-desc">
               We envision a world where employees are<br />highly engaged and
               very happy at work.<br />Join us in our journey today!
+            </div>
+            <div class="certifications full-width">
+              <div class="certificate">
+                <img src="./assets/ISO-27001.png" alt="" />
+              </div>
+              <div class="certificate">
+                <img src="./assets/ISO 22301.png" alt="" />
+              </div>
+              <div class="certificate">
+                <img
+                  src="./assets/GDPR Compliant.png"
+                  alt=""
+                  style="filter: grayscale(100%)"
+                />
+              </div>
             </div>
           </div>
           <div class="footer-column flexBox">
@@ -564,6 +732,7 @@
             </div>
           </div>
         </div>
+        <hr />
         <div class="copyright-container">
           Copyright &copy; 2021 Advantage Club. All rights reserved.
         </div>
