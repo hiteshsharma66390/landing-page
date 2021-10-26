@@ -665,6 +665,11 @@ body {
   }
   .corporate__logo {
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .corporate__image {
+    margin: 12px;
   }
   .country {
     margin: 20px;
