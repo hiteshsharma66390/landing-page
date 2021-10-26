@@ -663,6 +663,9 @@ body {
     width: 100%;
     flex-wrap: wrap;
   }
+  .corporate__logo {
+    width: 100%;
+  }
   .country {
     margin: 20px;
   }
@@ -703,6 +706,9 @@ body {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+  }
+  .copyright-container {
+    width: 100%;
   }
   .certificate {
     width: 33%;
