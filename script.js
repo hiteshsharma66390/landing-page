@@ -60,10 +60,12 @@ $(".slider-nav").slick({
 });
 
 function toggleMobileSidebar() {
-  console.log("function envoked");
   $("#mobile-sidebar").toggleClass("mobile-sidebar-show");
-  console.log($("#mobile-menu-bar"));
   $("#mobile-menu-bar").toggleClass("fa-times");
+}
+function toggleMobileSolutionIcon() {
+  $("#solution-menu-icon").toggleClass("fa-arrow-right");
+  $("#solution-menu-icon").toggleClass("fa-arrow-left");
 }
 
 //3d effect
