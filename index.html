@@ -74,19 +74,46 @@
                 </div>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <a class="dropdown-item" href="#">Rewards & Recognition</a>
+                    <a class="dropdown-item" href="#"
+                      ><span
+                        ><img
+                          src="./assets/Rewards & Recognition.png"
+                          alt="" /></span
+                      >Rewards & Recognition</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="#">Perks</a></li>
                   <li>
                     <a class="dropdown-item" href="#"
+                      ><span><img src="./assets/Perks.png" alt="" /></span
+                      >Perks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span
+                        ><img src="./assets/Sales Contest.png" alt="" /></span
                       >Sales Contest & Automated Incentives</a
                     >
                   </li>
-                  <li><a class="dropdown-item" href="#">Advantage Card</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">Early Wage Advantage</a>
+                    <a class="dropdown-item" href="#"
+                      ><span
+                        ><img src="./assets/Advantage Card.png" alt="" /></span
+                      >Advantage Card</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="#">communities</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><img src="./assets/EWA.png" alt="" /></span>Early
+                      Wage Advantage</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><span><img src="./assets/Communites.png" alt="" /></span
+                      >communities</a
+                    >
+                  </li>
                 </ul>
               </div>
               <a class="nav-item">Resources</a>
@@ -102,47 +129,86 @@
             ></i>
           </div>
         </div>
-        <div class="mobile-sidebar" id="mobile-sidebar">
-          <div class="mobile-menu-item full-width flexBox">
-            <div class="dropdown">
-              <div
-                class="dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
+        <div class="mobile-sidebar-wrapper" id="mobile-sidebar-wrapper">
+          <div class="mobile-sidebar" id="mobile-sidebar">
+            <div
+              class="mobile-menu-item full-width flexBox"
+              id="solution-menu"
+              onclick="toggleMobileSolutionIcon()"
+            >
+              <i class="fa fa-arrow-right fa-lg" id="solution-menu-icon"></i>
+              <button
+                class="btn btn-toggle align-items-center collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#solutions-collapse"
                 aria-expanded="false"
               >
                 Solutions
+              </button>
+              <div class="collapse" id="solutions-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li>
+                    <a class="" href="#"
+                      ><span
+                        ><img
+                          src="./assets/Rewards & Recognition.png"
+                          alt="" /></span
+                      >Rewards & Recognition</a
+                    >
+                  </li>
+                  <li>
+                    <a class="" href="#"
+                      ><span><img src="./assets/Perks.png" alt="" /></span
+                      >Perks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="" href="#"
+                      ><span
+                        ><img src="./assets/Sales Contest.png" alt="" /></span
+                      >Sales Contest & Automated Incentives</a
+                    >
+                  </li>
+                  <li>
+                    <a class="" href="#"
+                      ><span
+                        ><img src="./assets/Advantage Card.png" alt="" /></span
+                      >Advantage Card</a
+                    >
+                  </li>
+                  <li>
+                    <a class="" href="#"
+                      ><span><img src="./assets/EWA.png" alt="" /></span>Early
+                      Wage Advantage</a
+                    >
+                  </li>
+                  <li>
+                    <a class="" href="#"
+                      ><span><img src="./assets/Communites.png" alt="" /></span
+                      >communities</a
+                    >
+                  </li>
+                </ul>
               </div>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" href="#">Rewards & Recognition</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Perks</a></li>
-                <li>
-                  <a class="dropdown-item" href="#"
-                    >Sales Contest & Automated Incentives</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="#">Advantage Card</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Early Wage Advantage</a>
-                </li>
-                <li><a class="dropdown-item" href="#">communities</a></li>
-              </ul>
             </div>
-          </div>
-          <div class="mobile-menu-item full-width flexBox">
-            <a href="#">About Us</a>
-          </div>
-          <div class="mobile-menu-item full-width flexBox">
-            <a href="#">Contact Us</a>
-          </div>
-          <div class="mobile-menu-item full-width flexBox">
-            <a href="#">Login</a>
-          </div>
-          <div class="mobile-menu-item full-width flexBox">
-            <a href="#">Sign Up</a>
+            <div class="mobile-menu-item full-width flexBox">
+              <a href="#" class="flexBox">About Us</a>
+            </div>
+            <div class="mobile-menu-item full-width flexBox">
+              <a href="#" class="flexBox">Contact Us</a>
+            </div>
+            <div class="mobile-menu-item full-width flexBox">
+              <a href="#" class="flexBox">Login</a>
+            </div>
+            <div class="mobile-menu-item full-width flexBox">
+              <a href="#" class="flexBox">Sign Up</a>
+            </div>
+            <div class="demo-reach-us-container flexBox full-width">
+              <div id="request-demo" class="flexBox button-wrapper active">
+                Request a Demo
+              </div>
+              <span>Reach out to us at +91-8882-870-870</span>
+            </div>
           </div>
         </div>
       </header>

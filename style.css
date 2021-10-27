@@ -50,7 +50,7 @@ body {
   box-shadow: 0px 3px 6px #00000029;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 99;
   justify-content: center;
 }
 .header-wrapper {
@@ -79,6 +79,11 @@ body {
   text-decoration: none;
   margin-right: 24px;
 }
+.nav-item .dropdown-item span img {
+  width: 40px;
+  height: auto;
+  margin-right: 8px;
+}
 .nav-item:hover {
   color: #098c94;
 }
@@ -86,30 +91,89 @@ body {
   display: none;
   cursor: pointer;
 }
-.mobile-sidebar {
+.mobile-sidebar-wrapper {
   display: none;
   position: fixed;
+  z-index: 9;
   top: 10vh;
   width: 100vw;
+  /* min-height: 90vh; */
   height: 90vh;
+  overflow-y: auto;
+  background: white;
+}
+#request-demo {
+  margin: 1em 0;
+}
+.demo-reach-us-container {
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.mobile-sidebar {
   background: white;
   flex-direction: column;
+  width: 100%;
 }
-.mobile-sidebar-show {
+.mobile-sidebar-wrapper-show {
   display: flex;
 }
 .mobile-menu-item {
-  height: 60px;
-  border-bottom: 1px solid gray;
+  min-height: 50px;
+  border-bottom: 1px solid #80808026;
   align-items: center;
   padding-left: 2em;
 }
-.mobile-menu-item a,
-.mobile-menu-item .dropdown-toggle {
-  text-decoration: none;
+.mobile-menu-item button {
+  min-height: 60px;
+  padding: 0;
+}
+.mobile-menu-item button:focus {
+  box-shadow: none !important;
   color: #098c94;
   font-weight: 600;
   font-size: 16px;
+}
+.mobile-menu-item a,
+.mobile-menu-item .dropdown-toggle,
+.mobile-menu-item button {
+  text-decoration: none;
+  color: #098c94;
+  font-weight: 600;
+  font-size: 18px !important;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+.mobile-menu-item a {
+  font-size: 16px !important;
+  align-items: center;
+}
+#solution-menu {
+  position: relative;
+  flex-direction: column;
+}
+#solution-menu-icon {
+  position: absolute;
+  right: 36px;
+  top: 30px;
+  pointer-events: none;
+}
+#solutions-collapse {
+  width: 100%;
+}
+#solutions-collapse a {
+  font-size: 15px;
+}
+#solutions-collapse li {
+  margin: 20px 0;
+  margin-right: 10px;
+}
+#solutions-collapse li a span {
+  margin-right: 8px;
+}
+#solutions-collapse li a span img {
+  width: 34px;
 }
 .cover-corporate-wrapper {
   flex-direction: column;
@@ -550,6 +614,7 @@ body {
 .subscribe-container {
   min-height: 50px;
 }
+
 .subscribe-form {
   height: 100%;
   width: 467px;

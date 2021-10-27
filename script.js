@@ -60,10 +60,17 @@ $(".slider-nav").slick({
 });
 
 function toggleMobileSidebar() {
-  console.log("function envoked");
-  $("#mobile-sidebar").toggleClass("mobile-sidebar-show");
-  console.log($("#mobile-menu-bar"));
+  $("#mobile-sidebar-wrapper").toggleClass("mobile-sidebar-wrapper-show");
   $("#mobile-menu-bar").toggleClass("fa-times");
+  if ($(".mobile-sidebar-show")[0]) {
+    $("body").css("overflowY", "hidden");
+  } else {
+    $("body").css("overflowY", "auto");
+  }
+}
+function toggleMobileSolutionIcon() {
+  $("#solution-menu-icon").toggleClass("fa-arrow-right");
+  $("#solution-menu-icon").toggleClass("fa-arrow-left");
 }
 
 //3d effect
