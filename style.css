@@ -86,16 +86,30 @@ body {
   display: none;
   cursor: pointer;
 }
-.mobile-sidebar {
+.mobile-sidebar-wrapper {
   display: none;
   position: fixed;
+  z-index: 999;
   top: 10vh;
   width: 100vw;
+  /* min-height: 90vh; */
   height: 90vh;
+  overflow-y: auto;
+  background: white;
+}
+#request-demo {
+  margin: 1em 0;
+}
+.demo-reach-us-container {
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-sidebar {
   background: white;
   flex-direction: column;
+  width: 100%;
 }
-.mobile-sidebar-show {
+.mobile-sidebar-wrapper-show {
   display: flex;
 }
 .mobile-menu-item {
@@ -148,11 +162,9 @@ body {
   margin: 20px 0;
 }
 #solutions-collapse li a span {
-  transform: scale(1.2);
   margin-right: 18px;
 }
 #solutions-collapse li a span img {
-  transform: scale(1.5);
 }
 .cover-corporate-wrapper {
   flex-direction: column;

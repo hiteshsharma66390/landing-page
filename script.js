@@ -60,8 +60,13 @@ $(".slider-nav").slick({
 });
 
 function toggleMobileSidebar() {
-  $("#mobile-sidebar").toggleClass("mobile-sidebar-show");
+  $("#mobile-sidebar-wrapper").toggleClass("mobile-sidebar-wrapper-show");
   $("#mobile-menu-bar").toggleClass("fa-times");
+  if ($(".mobile-sidebar-show")[0]) {
+    $("body").css("overflowY", "hidden");
+  } else {
+    $("body").css("overflowY", "auto");
+  }
 }
 function toggleMobileSolutionIcon() {
   $("#solution-menu-icon").toggleClass("fa-arrow-right");
