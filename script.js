@@ -108,13 +108,10 @@ function toggleMobileSidebar() {
   } else {
     $("body").css("overflowY", "auto");
   }
-<<<<<<< HEAD
 }
 function toggleMobileSolutionIcon() {
   $("#solution-menu-icon").toggleClass("fa-arrow-right");
   $("#solution-menu-icon").toggleClass("fa-arrow-left");
-=======
->>>>>>> testing
 }
 function toggleMobileSolutionIcon() {
   $("#solution-menu-icon").toggleClass("fa-arrow-right");
