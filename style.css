@@ -1037,6 +1037,9 @@ body {
   .newsroom-container-wrapper {
     width: 100%;
   }
+  .container{
+    height:592px;
+  }
 
   .testimonial-container,
   .blogs-container,
