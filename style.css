@@ -784,6 +784,7 @@ body {
 }
 .brands-container {
   justify-content: center;
+  margin-top: 24px;
 }
 .brand-container-description {
   color: #3d3d3d;
@@ -804,8 +805,8 @@ body {
 }
 .container {
   width: 1096px;
-  height: 512px;
-  margin: 1em auto;
+  height: 480px;
+  margin: 0 auto;
   overflow: hidden;
   background: white;
   position: relative;
@@ -1121,7 +1122,7 @@ body {
 .testimonial-area {
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
-  padding: 20px 0 24px;
+  padding: 20px 0 0px;
   position: relative;
 }
 .testimonial-area:after {
