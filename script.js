@@ -58,7 +58,48 @@ $(".slider-nav").slick({
     },
   ],
 });
+var words = [
+  "Engagement !",
+  "Awarding !",
+  "Recognition !",
+  "Perks !",
+  "Incentives !",
+  "Financial Independence !",
+];
+// var words = ["Organize", "Attend", "Share"];
 
+window.addEventListener("load", function () {
+  gsap.fromTo(
+    ".cursor",
+    { autoAlpha: 0 },
+    { autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1) }
+  );
+
+  var tl = new TimelineMax({
+    ease: SteppedEase.config(15),
+    opacity: 0,
+    repeat: -1,
+  });
+
+  var textClass = ".typewriter-text";
+
+  var defaults = {
+    opacity: 1,
+    yoyo: true,
+    repeat: 1,
+    repeatDelay: 1,
+  };
+  words.forEach(function (word) {
+    tl.add(TweenMax.to(textClass, Object.assign({ text: word }, defaults)));
+  });
+});
+// [...$(".brand-image")].map(function (elem) {
+//   var elementNode = elem;
+//   console.log(elementNode);
+//   // setInterval(function(elementNode){
+//   //   console.log(elementNode);
+//   // },1000)
+// });
 function toggleMobileSidebar() {
   $("#mobile-sidebar-wrapper").toggleClass("mobile-sidebar-wrapper-show");
   $("#mobile-menu-bar").toggleClass("fa-times");
@@ -72,7 +113,19 @@ function toggleMobileSolutionIcon() {
   $("#solution-menu-icon").toggleClass("fa-arrow-right");
   $("#solution-menu-icon").toggleClass("fa-arrow-left");
 }
-
+function toggleSolutionMenu() {
+  console.log("function got envoked");
+  $(".solution-dropdown").toggleClass("solution-dropdown-active");
+  // $(".dropdown-menu").toggleClass("show");
+}
+$("body").on("click", function (e) {
+  if (
+    e.target.classList[0] != "dropdown-toggle" &&
+    $(".solution-dropdown").hasClass("solution-dropdown-active")
+  ) {
+    $(".solution-dropdown").removeClass("solution-dropdown-active");
+  }
+});
 //3d effect
 
 // /* Store the element in el */

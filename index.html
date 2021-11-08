@@ -47,6 +47,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+      integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/TextPlugin.min.js"
+      integrity="sha512-eS29LjjTKq7Zq4U0fnDyvDoX5YBSIpl+EVb/sAprlYoaqIa+Q2SrfKL5xy6wQiiSDXduHx1xx2a5PTeP799hTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -62,56 +74,57 @@
           </div>
           <div class="right-header flexBox">
             <ul class="nav-menu flexBox full-width">
-              <div class="dropdown nav-item">
+              <div class="dropdown solution-dropdown nav-item noselect">
                 <div
                   class="dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton1"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
+                  onclick="toggleSolutionMenu()"
                 >
                   Solutions
                 </div>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                   <li>
-                    <a class="dropdown-item" href="#"
-                      ><span
-                        ><img
-                          src="./assets/Rewards & Recognition.png"
-                          alt="" /></span
-                      >Rewards & Recognition</a
-                    >
+                    <a class="dropdown-item" href="#">
+                      <div class="solution-image-wrapper flexBox" full-width>
+                        <img
+                          src="./assets/solution/1.png"
+                          alt="" />
+                          <div class="solution-desc-container flexBox"><div class="">Rewards & Recognition</div><div>Digitize end-to-end rewarding, from budget allocation to redemption on the go!</div></div></div>
+                    </a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
-                      ><span><img src="./assets/Perks.png" alt="" /></span
+                      ><span><img src="./assets/solution/4.png" alt="" /></span
                       >Perks</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
                       ><span
-                        ><img src="./assets/Sales Contest.png" alt="" /></span
+                        ><img src="./assets/solution/2.png" alt="" /></span
                       >Sales Contest & Automated Incentives</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
                       ><span
-                        ><img src="./assets/Advantage Card.png" alt="" /></span
+                        ><img src="./assets/solution/5.png" alt="" /></span
                       >Advantage Card</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
-                      ><span><img src="./assets/EWA.png" alt="" /></span>Early
+                      ><span><img src="./assets/solution/3.png" alt="" /></span>Early
                       Wage Advantage</a
                     >
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
-                      ><span><img src="./assets/Communites.png" alt="" /></span
-                      >communities</a
+                      ><span><img src="./assets/solution/6.png" alt="" /></span
+                      >Communities</a
                     >
                   </li>
                 </ul>
@@ -217,17 +230,27 @@
           <div class="cover-section flexBox">
             <div class="cover-left-container flexBox">
               <div class="cover-left-top-container">
-                Discover an
-                <span class="key-word">Employee Engagement</span> and Financial
-                Wellness platform that goes
-                <span class="key-word">beyond satisfaction</span>!
+                <span class="typewriter-text key-word"></span
+                ><span class="cursor">|</span>
+
+                <br />
+                All for your Employees under a single roof.
+                <br />
+
+                <br />
+                <!-- <span class="key-word">Employee Engagement</span> and Financial -->
+                <!-- <span class="key-word">beyond satisfaction</span>! -->
               </div>
-              <div class="cover-left-bottom-container">
+              <!-- <div class="cover-left-bottom-container">
                 Advantage Club makes Reward & Recognition easy and fun,
                 fostering community with everything you need to make work
                 rewarding for today’s global workforce. You can unburden your
                 people from consumer debt and show that you value them by giving
                 Early Wage Access.
+              </div> -->
+              <div class="cover-left-bottom-container">
+                Advantage Club - Global platform for employee engagement,
+                recognition and financial wellbeing.
               </div>
               <div class="button-container flexBox">
                 <div class="button-wrapper active flexBox">Request a Demo</div>
@@ -251,46 +274,25 @@
           <div class="corporate-slider full-width flexBox">
             <div class="corporate__logo">
               <div class="corporate__image">
-                <img
-                  src="https://cdn3.workadvantage.in/images/img/image/870241/2b9022226d.png"
-                  alt=""
-                />
+                <img src="./assets/corporates/HEXAWARE.jpg" alt="" />
               </div>
               <div class="corporate__image">
-                <img
-                  src="https://cdn3.workadvantage.in/images/img/image/870239/e0ec88b545.png"
-                  alt=""
-                />
+                <img src="./assets//corporates/cnx.jpg" alt="" />
               </div>
               <div class="corporate__image">
-                <img
-                  src="https://cdn0.workadvantage.in/images/img/image/870240/34a7bb7227.png"
-                  alt=""
-                />
+                <img src="./assets/corporates/tp.jpg" alt="" />
               </div>
               <div class="corporate__image">
-                <img
-                  src="https://cdn2.workadvantage.in/images/img/image/869804/487c2432ba.png"
-                  alt=""
-                />
+                <img src="./assets/corporates/lafarge.jpg" alt="" />
               </div>
               <div class="corporate__image">
-                <img
-                  src="https://cdn3.workadvantage.in/images/img/image/870241/2b9022226d.png"
-                  alt=""
-                />
+                <img src="./assets/corporates/delhivery.jpg" alt="" />
               </div>
               <div class="corporate__image">
-                <img
-                  src="https://cdn1.workadvantage.in/images/img/image/870244/7a8962b171.png"
-                  alt=""
-                />
+                <img src="./assets/corporates/pnb-metlife.jpg" alt="" />
               </div>
               <div class="corporate__image">
-                <img
-                  src="https://cdn1.workadvantage.in/images/img/image/870242/0440ba7b6b.png"
-                  alt=""
-                />
+                <img src="./assets/corporates/target-logo.jpg" alt="" />
               </div>
             </div>
           </div>
@@ -543,50 +545,40 @@
                 <div class="testimonial-text-slider slider-for text-center">
                   <div class="sin-testiText">
                     <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable.
+                      The offers are real discounts. Really love the unique offers from
+              big brands. I especially like "I want program" on their website
+              where you can place your request for a particular brand and
+              services and they will try to avail discount on those as well.
                     </p>
                   </div>
                   <div class="sin-testiText">
                     <p>
-                      Nam nec tellus a odio tincidunt This lorem is Photoshop's
-                      version of Lorem Ipsum. Proin gravida nibh vel velit
-                      auctor aliquet. Aenean nisi sollicitudin, lorem quis
-                      bibendum auctor, nisi elit consequat ipsum gravida.
+                      Very satisfied. Availed the exclusive discount on Netmeds. Was
+                      awesome to get a discount on Beer Café as well.
                     </p>
                   </div>
                   <div class="sin-testiText">
                     <p>
-                      Nam nec tellus a odio tincidunt This is Photoshop's
-                      version of Lorem Ipsum. Proin gravida nibh vel velit
-                      auctor aliquet. Aenean tincidunt sollicitudin, lorem quis
-                      bibendum auctor, nisi elit consequat ipsum Photoshop.
+                      The app has improved a lot and I look forward to using more
+              categories.
                     </p>
                   </div>
                   <div class="sin-testiText">
                     <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable.
+                      Used Flipkart &amp; was a happy experience getting an extra
+                      benefit.
                     </p>
                   </div>
                   <div class="sin-testiText">
                     <p>
-                      Nam nec tellus a odio tincidunt This is Photoshop's
-                      version of Lorem Ipsum. Proin gravida nibh vel velit
-                      auctor aliquet. Aenean sollicitudin, aliquet lorem quis
-                      tellus velit bibendum auctor, nisi elit consequat ipsum
+                      Attractive privileges &amp; excellent customer service
+              experience.
                     </p>
                   </div>
                   <div class="sin-testiText">
                     <p>
-                      Nam nec tellus a odio tincidunt This is Photoshop's
-                      version of Lorem Ipsum. Proin gravida nibh vel velit
-                      auctor aliquet. Aenean sollicitudin, lorem gravida
-                      tincidunt quis bibendum auctor, nisi elit consequat ipsum
+                      Very satisfied. Availed the exclusive discount on Netmeds. Was
+              awesome to get a discount on Beer Café as well.
                     </p>
                   </div>
                 </div>
@@ -599,32 +591,32 @@
                     >
                       <div class="sin-testiImage">
                         <img
-                          src="data:image/jpeg;base64,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"
+                          src="./assets/Path 2831.png"
                         />
                       </div>
                       <div class="sin-testiImage">
                         <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZG-8Pk5VYr_MOP4Ks3uEeZdArTUAizNRwg&usqp=CAU"
+                          src="./assets/Path 2831.png"
                         />
                       </div>
                       <div class="sin-testiImage">
                         <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vM2qsCjUgRSoPweeW40FyVcLFrjIc-bbuw&usqp=CAU"
+                          src="./assets/Path 2831.png"
                         />
                       </div>
                       <div class="sin-testiImage">
                         <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB_tSupeOZhLe53K9dNH9Bro2HdfZjv9CQQ&usqp=CAU"
+                          src="./assets/Path 2831.png"
                         />
                       </div>
                       <div class="sin-testiImage">
                         <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZk49_WlEqjKsGVcP8QtTz4Q24hLx0vA2QQQ&usqp=CAU"
+                          src="./assets/Path 2831.png"
                         />
                       </div>
                       <div class="sin-testiImage">
                         <img
-                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSocV_XuUy3hAY10vgfXXm_FtL3JXwSAbrYig&usqp=CAU"
+                          src="./assets/Path 2831.png"
                         />
                       </div>
                     </div>
@@ -632,28 +624,28 @@
                 </div>
                 <div class="testimonial-text-slider slider-for text-center">
                   <div class="sin-testiText">
-                    <h2>Shabab Ahmed</h2>
-                    <h4>Senior Developer</h4>
+                    <h2>Maneesh Garg</h2>
+                    <h4>Broadcast 2 World</h4>
                   </div>
                   <div class="sin-testiText">
-                    <h2>Soyong Sourav</h2>
-                    <h4>Marketing Head</h4>
+                    <h2>Mohit</h2>
+                    <h4>EY</h4>
                   </div>
                   <div class="sin-testiText">
-                    <h2>Joker Buzz</h2>
-                    <h4>Product Manager</h4>
+                    <h2>Akshat</h2>
+                    <h4>HCL</h4>
                   </div>
                   <div class="sin-testiText">
-                    <h2>M S Nawaz</h2>
-                    <h4>HR</h4>
+                    <h2>Mayank</h2>
+                    <h4>Accenture</h4>
                   </div>
                   <div class="sin-testiText">
-                    <h2>Chowchilla Madera</h2>
-                    <h4>Co Founder</h4>
+                    <h2>Pranay</h2>
+                    <h4>FIS Global</h4>
                   </div>
                   <div class="sin-testiText">
-                    <h2>Kattie Luis</h2>
-                    <h4>Founder</h4>
+                    <h2> Mohit</h2>
+                    <h4>EY</h4>
                   </div>
                 </div>
               </div>
@@ -676,72 +668,128 @@
         <div class="see-all-blogs flexBox">See All Blogs</div>
       </div> -->
       <div class="newsroom-container full-width flexBox">
-        <h3 class="product-heading">
-          News <span class="key-word-primary">Room</span>
-        </h3>
-        <h4 class="product-sub-heading">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor"
-        </h4>
-        <div class="news-wrapper full-width flexBox">
-          <div class="news flexBox">
-            <div class="news-image-container">
-              <img
-                src="https://www.avis.co.in/blog/wp-content/uploads/2017/12/Business-Standard-logo-1.png"
-                alt=""
-              />
+        <div class="newsroom-container-wrapper flexBox">
+          <h3 class="product-heading">
+            News <span class="key-word-primary">Room</span>
+          </h3>
+          <h4 class="product-sub-heading">
+            Advantage-ing the Media way!
+          </h4>
+          <div class="news-wrapper full-width flexBox">
+            <div class="news flexBox">
+              <div class="news-image-container">
+                <img
+                  src="https://www.avis.co.in/blog/wp-content/uploads/2017/12/Business-Standard-logo-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="news-desc-container full-width">
+                "Advantage Club to hire 100 employees by the end of 2021
+              </div>
+              <div class="read-more flexBox full-width">
+                <a
+                  href="https://www.peoplematters.in/news/talent-acquisition/advantage-club-to-hire-100-employees-by-the-end-of-2021-31189"
+                  target="_blank"
+                  >Read More</a
+                >
+              </div>
             </div>
-            <div class="news-desc-container full-width">
-              "Advantage Club re-inventing USD 3 Billion HR Industry in India
+            <div class="news flexBox">
+              <div class="news-image-container">
+                <img
+                  src="https://cdn1.workadvantage.in/images/img/image/869751/949bd553e1.png"
+                  alt=""
+                />
+              </div>
+              <div class="news-desc-container full-width">
+                "Gurgaon-based Advantage Club Goes Global
+              </div>
+              <div class="read-more flexBox full-width">
+                <a
+                  href="https://www.entrepreneur.com/article/371236"
+                  target="_blank"
+                  >Read More</a
+                >
+              </div>
             </div>
-            <div class="read-more flexBox full-width">
-              <a
-                href="https://www.business-standard.com/article/news-ani/advantage-club-re-inventing-usd-3-billion-hr-industry-in-india-119102401224_1.html"
-                target="_blank"
-                >Read More</a
-              >
-            </div>
-          </div>
-          <div class="news flexBox">
-            <div class="news-image-container">
-              <img
-                src="https://cdn1.workadvantage.in/images/img/image/869751/949bd553e1.png"
-                alt=""
-              />
-            </div>
-            <div class="news-desc-container full-width">
-              "Advantage Club reports GMV of Rs 100 crore in FY20
-            </div>
-            <div class="read-more flexBox full-width">
-              <a
-                href="https://www.vccircle.com/growx-ventures-leads-pre-series-a-funding-in-hr-tech-startup-advantage-club"
-                target="_blank"
-                >Read More</a
-              >
-            </div>
-          </div>
-          <div class="news flexBox">
-            <div class="news-image-container">
-              <img
-                src="https://cdn3.workadvantage.in/images/img/image/869757/5e32d92b58.jpg"
-                alt=""
-              />
-            </div>
-            <div class="news-desc-container full-width">
-              "With Advantage Club, companies' employee benefits now include
-              discount coupons and loyalty points
-            </div>
-            <div class="read-more flexBox full-width">
-              <a
-                href="https://yourstory.com/2018/01/advantage-club-is-helping-firms-redefine-employee-benefits-and-corporate-discounts?utm_pageloadtype=scroll"
-                target="_blank"
-                >Read More</a
-              >
+            <div class="news flexBox">
+              <div class="news-image-container">
+                <img
+                  src="https://cdn3.workadvantage.in/images/img/image/869757/5e32d92b58.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="news-desc-container full-width">
+                "With Advantage Club, companies' employee benefits now include
+                discount coupons and loyalty points
+              </div>
+              <div class="read-more flexBox full-width">
+                <a
+                  href="https://yourstory.com/2018/01/advantage-club-is-helping-firms-redefine-employee-benefits-and-corporate-discounts?utm_pageloadtype=scroll"
+                  target="_blank"
+                  >Read More</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="newsletter-container flexBox full-width">
+      <div class="brands-container full-width flexBox">
+        <div class="brands-wrapper flexBox">
+          <div class="brands-left-container full-width flexBox">
+            <div class="brand-container-title title">
+              Providing the best with 10,000+ Brand Partners to 370+ Corporates
+            </div>
+            <div class="brand-container-description">
+              We’re here to make sure that you can offer the best of benefits to connect deeply with your employees and clients! With our end-to-end solutions you can drive engagement with exclusive rewards and offers. 
+            </div>
+          </div>
+          <div class="brands-right-container">
+            <div class="microsoft container" id="marquee-container">
+              <div class="marquee">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/keventers.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/lazada.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/walmart.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/seven-eleven.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/dlf.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/lifestyle.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/mcaffeine.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/mcaffeine.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/flipkart.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/seven-eleven.png" alt="">                
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/flipkart.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/lazada.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/seven-eleven.png" alt="">               
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/goodrej.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/dlf.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/dlf.png" alt="">
+                <img class="brand-image" src="https://cdn2.workadvantage.in/images/img/image/886844/bfe32394b1.jpg" alt="">
+                <img class="brand-image" src="https://cdn2.workadvantage.in/images/img/image/886844/bfe32394b1.jpg" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/keventers.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/lazada.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/walmart.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/seven-eleven.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/dlf.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/lifestyle.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/mcaffeine.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/mcaffeine.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/flipkart.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/seven-eleven.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/flipkart.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/lazada.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/seven-eleven.png" alt="">               
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/goodrej.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/dlf.png" alt="">
+                <img class="brand-image" src="https://secure.workadvantage.in/assets/brands_logos/dlf.png" alt="">
+                <img class="brand-image" src="https://cdn2.workadvantage.in/images/img/image/886844/bfe32394b1.jpg" alt="">
+                <img class="brand-image" src="https://cdn2.workadvantage.in/images/img/image/886844/bfe32394b1.jpg" alt="">
+              </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="newsletter-container flexBox full-width">
         <div class="newsletter flexBox">
           <div class="newsletter-title">
             Subscribe to our Newsletter<br />
@@ -765,7 +813,7 @@
             </form>
           </div>
         </div>
-      </div>
+      </div> -->
       <footer id="ac-footer" class="full-width flexBox">
         <div class="footer-content-container full-width flexBox">
           <div class="footer-column-thick">
