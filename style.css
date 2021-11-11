@@ -54,13 +54,18 @@ body {
 #ac-header {
   width: 100vw;
   /* overflow-x: hidden; */
+  /* background-image: url(./assets/BG\ Image.png); */
+  background: #e4feff;
   height: 10vh;
-  background: white;
-  box-shadow: 0px 3px 6px #00000029;
   position: sticky;
   top: 0;
   z-index: 99;
   justify-content: center;
+}
+.active-header{
+  box-shadow: 0px 3px 6px #00000029;
+  background:white !important;
+  /* background-image: none !important; */
 }
 .header-wrapper {
   width: 1096px;
@@ -74,6 +79,7 @@ body {
   height: 100%;
   align-items: center;
   float: right;
+  padding-right: 60px;
 }
 .nav-menu {
   height: 80%;
@@ -82,7 +88,7 @@ body {
   margin-bottom: 0 !important;
 }
 .solution-dropdown {
-  background: white;
+  background: transparent;
   height: 100%;
   text-align: center;
   margin: auto;
@@ -156,8 +162,8 @@ body {
 }
 .right-header .dropdown-menu li img {
   width: 25px;
-  height: 26px;
-  margin-top: 6px;
+  height: 100%;
+  margin-top: 12px;
   margin-right: 8px;
   filter: grayscale(100%);
 }
@@ -364,16 +370,21 @@ body {
 .cover-right-image-container {
   width: 487px;
   height: 100%;
-  float: right;
-  margin-right: -100px;
+  float: left;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left:-90px;
 }
 .cover-image {
-  height: 100%;
+  height: 80%;
 }
 .corporate-container {
   height: 20%;
   flex-direction: column;
   justify-content: center;
+}
+.corporate-container .sub-title{
+  margin-top:24px;
 }
 .corporate-slider {
   padding: 10px 0;
@@ -389,15 +400,11 @@ body {
 .corporate__image {
   width: 128px;
   height: 54px;
-  filter: grayscale(100%);
   padding: 7px;
 }
 .corporate__image img {
   width: 100%;
   height: auto;
-}
-.corporate__image:hover {
-  filter: grayscale(0);
 }
 .corporate__text {
   height: 100%;
@@ -791,6 +798,9 @@ body {
   font-size: 22px;
   text-align: center;
 }
+.brand-container-title{
+  margin-bottom:24px;
+}
 .brands-wrapper {
   width: 1096px;
 }
@@ -817,15 +827,15 @@ body {
   top: 0;
   position: relative;
   box-sizing: border-box;
-  animation: marquee 15s linear infinite;
+  animation: marquee 50s linear infinite;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 .marquee img {
-  width: 16%;
-  margin: 30px;
+  width: 80%;
+  margin-bottom: 50px;
 }
 
 /* .marquee:hover {
@@ -838,7 +848,7 @@ body {
     top: 0em;
   }
   100% {
-    top: -17em;
+    top: -70em;
   }
 }
 .microsoft:before,
@@ -1111,7 +1121,7 @@ body {
   }
   .cover-section {
     width: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .sin-testiText p {
     position: relative;

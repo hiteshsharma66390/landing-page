@@ -130,6 +130,14 @@ $("body").on("click", function (e) {
     $(".solution-dropdown").removeClass("solution-dropdown-active");
   }
 });
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 50) {
+    $("#ac-header").addClass("active-header");
+  } else {
+    //remove the background property so it comes transparent again (defined in your css)
+    $("#ac-header").removeClass("active-header");
+  }
+});
 //3d effect
 
 // /* Store the element in el */
