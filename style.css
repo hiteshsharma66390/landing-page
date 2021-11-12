@@ -62,9 +62,9 @@ body {
   z-index: 99;
   justify-content: center;
 }
-.active-header{
+.active-header {
   box-shadow: 0px 3px 6px #00000029;
-  background:white !important;
+  background: white !important;
   /* background-image: none !important; */
 }
 .header-wrapper {
@@ -183,7 +183,6 @@ body {
 .mobile-sidebar-wrapper {
   display: none;
   position: fixed;
-<<<<<<< HEAD
   z-index: 999;
   top: 10vh;
   width: 100vw;
@@ -200,13 +199,11 @@ body {
   align-items: center;
 }
 .mobile-sidebar {
-=======
   z-index: 9;
   top: 10vh;
   width: 100vw;
   height: 90vh;
   overflow-y: auto;
->>>>>>> testing
   background: white;
 }
 #request-demo {
@@ -214,19 +211,13 @@ body {
 }
 .demo-reach-us-container {
   flex-direction: column;
-<<<<<<< HEAD
   width: 100%;
-}
-=======
-  align-items: center;
-  padding-bottom: 1em;
 }
 .mobile-sidebar {
   background: white;
   flex-direction: column;
   width: 100%;
 }
->>>>>>> testing
 .mobile-sidebar-wrapper-show {
   display: flex;
 }
@@ -258,10 +249,7 @@ body {
   text-align: left;
 }
 .mobile-menu-item a {
-<<<<<<< HEAD
-=======
   font-size: 16px !important;
->>>>>>> testing
   align-items: center;
 }
 #solution-menu {
@@ -278,7 +266,6 @@ body {
   width: 100%;
 }
 #solutions-collapse a {
-<<<<<<< HEAD
   font-size: 15px !important;
 }
 #solutions-collapse li {
@@ -290,7 +277,6 @@ body {
 #solutions-collapse li a span img {
   width: 34px;
   height: auto;
-=======
   font-size: 15px;
 }
 #solutions-collapse li {
@@ -302,17 +288,37 @@ body {
 }
 #solutions-collapse li a span img {
   width: 34px;
->>>>>>> testing
 }
 .cover-corporate-wrapper {
   flex-direction: column;
   height: 90vh;
+  position: relative;
 }
 .cover-wrapper {
   height: 80%;
   background: #dfeeeb;
   background-image: url(./assets/BG\ Image.png);
+  background-repeat: round;
   justify-content: center;
+}
+.cover-bg-wrapper {
+  position: absolute;
+  bottom: 0;
+  top: -500px;
+  opacity: 0.5;
+}
+#cover-left-bg-wrapper {
+  position: absolute;
+  left: -55vw;
+  bottom: -20vh;
+}
+#cover-right-bg-wrapper {
+  position: absolute;
+  right: -45vw;
+  bottom: -40vh;
+}
+.cover-bg-wrapper img {
+  height: 80%;
 }
 .typewriter-text,
 .cursor {
@@ -324,6 +330,7 @@ body {
 }
 .cover-section {
   width: 1096px;
+  position: relative;
 }
 #ac-logo {
   width: 176px;
@@ -347,7 +354,6 @@ body {
 }
 .cover-left-bottom-container {
   font-size: 18px;
-  margin-top: 11px;
 }
 .button-container {
   margin-top: 25px;
@@ -373,18 +379,19 @@ body {
   float: left;
   align-items: center;
   justify-content: flex-start;
-  margin-left:-90px;
+  margin-left: -90px;
 }
 .cover-image {
-  height: 80%;
+  height: 70%;
+  z-index: 9;
 }
 .corporate-container {
   height: 20%;
   flex-direction: column;
   justify-content: center;
 }
-.corporate-container .sub-title{
-  margin-top:24px;
+.corporate-container .sub-title {
+  margin-top: 24px;
 }
 .corporate-slider {
   padding: 10px 0;
@@ -472,7 +479,7 @@ body {
   margin-left: 8px;
 }
 .product-heading {
-  font-size: 40px;
+  font-size: 30px;
   color: #3d3d3d;
   text-align: center;
   font-weight: 600;
@@ -798,8 +805,8 @@ body {
   font-size: 22px;
   text-align: center;
 }
-.brand-container-title{
-  margin-bottom:24px;
+.brand-container-title {
+  margin-bottom: 24px;
 }
 .brands-wrapper {
   width: 1096px;
@@ -1047,8 +1054,8 @@ body {
   .newsroom-container-wrapper {
     width: 100%;
   }
-  .container{
-    height:592px;
+  .container {
+    height: 592px;
   }
 
   .testimonial-container,
