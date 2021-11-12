@@ -65,6 +65,7 @@ body {
 .active-header {
   box-shadow: 0px 3px 6px #00000029;
   background: white !important;
+  z-index: 999 !important;
   /* background-image: none !important; */
 }
 .header-wrapper {
@@ -305,7 +306,9 @@ body {
   position: absolute;
   bottom: 0;
   top: -500px;
-  opacity: 0.5;
+  opacity: 0.9;
+  z-index: 99;
+  pointer-events: none;
 }
 #cover-left-bg-wrapper {
   position: absolute;
@@ -735,7 +738,6 @@ body {
 .testimonial-container-wrapper h3 {
   font-size: 18px;
   margin: 48px 0;
-  width: 800px;
 }
 .newsroom-container-wrapper {
   width: 1096px;
