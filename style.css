@@ -331,6 +331,8 @@ body {
 .cover-section {
   width: 1096px;
   position: relative;
+  overflow: hidden;
+  min-height: 90vh;
 }
 #ac-logo {
   width: 176px;
