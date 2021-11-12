@@ -341,6 +341,7 @@ body {
 .cover-right-container {
   width: 60%;
   height: 100%;
+  z-index: 9;
 }
 .cover-left-container {
   width: 40%;
@@ -1020,7 +1021,7 @@ body {
   .cover-right-container {
     width: 100vw;
     padding: 2em;
-    padding-bottom: 0;
+    padding-bottom: 12px;
   }
   .cover-right-image-container {
     margin: auto;
