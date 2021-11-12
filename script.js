@@ -58,6 +58,9 @@ $(".slider-nav").slick({
     },
   ],
 });
+$("#testimonials-slider").slick({
+  dots: true,
+});
 var words = [
   "Engagement !",
   "Awarding !",
