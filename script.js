@@ -122,17 +122,10 @@ function toggleMobileSolutionIcon() {
 }
 function toggleSolutionMenu() {
   console.log("function got envoked");
-  if ($(window).scrollTop() < 50) {
-    $("#ac-header").toggleClass("active-header");
-  }
-  $(".solution-dropdown").toggleClass("solution-dropdown-active");
 
   // $(".dropdown-menu").toggleClass("show");
 }
 $("body").on("click", function (e) {
-  if ($(".dropdown-menu").hasClass("show")) {
-    $("#ac-header").addClass("active-header");
-  }
   if (
     e.target.classList[0] != "dropdown-toggle" &&
     $(".solution-dropdown").hasClass("solution-dropdown-active")
@@ -141,9 +134,6 @@ $("body").on("click", function (e) {
   }
 });
 $(window).on("scroll", function () {
-  if ($(".dropdown-menu").hasClass("show"))
-    $("#ac-header").addClass("active-header");
-  else $("#ac-header").removeClass("active-header");
   if ($(window).scrollTop() > 50) {
     $("#ac-header").addClass("active-header");
   } else if (!$(".dropdown-menu").hasClass("show")) {
