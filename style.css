@@ -474,6 +474,9 @@ body {
   margin: 12px 0;
   font-weight: 500;
 }
+.product .product-title {
+  font-size: 16px;
+}
 .product-des {
   color: #3d3d3d;
   font-size: 16px;
@@ -1092,7 +1095,7 @@ body {
     font-size: 30px;
   }
   .product {
-    margin-right: 0;
+    margin: 24px;
   }
   /* .product-wrapper {
     display: none;
