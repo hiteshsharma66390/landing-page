@@ -1238,6 +1238,11 @@ body {
 .slick-slide {
   width: 135px;
 }
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 50px !important;
+  line-height: 20px;
+}
 .sin-testiImage {
   display: inline-block;
   margin-bottom: 11px;
