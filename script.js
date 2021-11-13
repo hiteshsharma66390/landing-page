@@ -122,8 +122,10 @@ function toggleMobileSolutionIcon() {
 }
 function toggleSolutionMenu() {
   console.log("function got envoked");
+  // event.stopPropagation();
+  // $(".dropdown-toggle").click();
 
-  // $(".dropdown-menu").toggleClass("show");
+  //$(".dropdown-menu").toggleClass("show");
 }
 $("body").on("click", function (e) {
   if (
