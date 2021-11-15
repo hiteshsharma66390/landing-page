@@ -40,6 +40,9 @@ body {
   background: #098c94;
   color: white;
 }
+.active-header {
+  box-shadow: 0px 3px 6px #00000029;
+}
 .sub-title {
   color: #3d3d3d;
   font-size: 18px;
@@ -58,18 +61,12 @@ body {
   width: 100vw;
   /* overflow-x: hidden; */
   /* background-image: url(./assets/BG\ Image.png); */
-  background: #e4feff;
   height: 10vh;
   position: sticky;
   top: 0;
-  z-index: 99;
   justify-content: center;
-}
-.active-header {
-  box-shadow: 0px 3px 6px #00000029;
   background: white !important;
   z-index: 9990 !important;
-  /* background-image: none !important; */
 }
 .header-wrapper {
   width: 1096px;
@@ -752,7 +749,7 @@ body {
 }
 .testimonial-container-wrapper h3 {
   font-size: 18px;
-  margin: 48px 0;
+  margin-bottom: 48px;
 }
 .newsroom-container-wrapper {
   width: 1096px;
@@ -903,7 +900,7 @@ body {
 }
 .marquee img {
   width: 80%;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
 }
 
 /* .marquee:hover {
@@ -1085,11 +1082,15 @@ body {
     width: 100vw;
     padding: 2em;
     padding-bottom: 12px;
+    height: 50%;
   }
   .cover-right-image-container {
     margin: auto;
     float: left;
     width: 100%;
+  }
+  .cover-bg-wrapper {
+    display: none !important;
   }
   .product-heading {
     font-size: 30px;
@@ -1103,6 +1104,9 @@ body {
   .contry-wrapper {
     width: 100%;
     flex-wrap: wrap;
+  }
+  .country-container {
+    padding: 24px 0;
   }
   .corporate__logo {
     width: 100%;
@@ -1121,6 +1125,7 @@ body {
   }
   .testimonial-container-wrapper h3 {
     width: auto;
+    margin-top: 24px;
   }
   .container {
     height: 592px;
@@ -1156,13 +1161,20 @@ body {
     height: 50px;
     margin: 5px 0;
   }
-  .brands-wrapper,
-  .footer-content-container {
+  .brands-wrapper {
     flex-direction: column;
   }
   .brands-left-container,
   .brands-right-container {
     width: 100%;
+  }
+  @keyframes marquee {
+    0% {
+      top: 0em;
+    }
+    100% {
+      top: -50em;
+    }
   }
   #ac-footer {
     width: 100%;
@@ -1173,15 +1185,24 @@ body {
     width: 100%;
   }
   .certificate {
-    width: 33%;
+    width: 50%;
+    margin-bottom: 24px;
   }
   .footer-content-container {
     width: 100%;
+    flex-wrap: wrap;
   }
   .footer-column-thick,
   .footer-column,
   .copyright-container {
     text-align: center;
+  }
+  .footer-column-thick {
+    min-width: none;
+    width: 100%;
+  }
+  .footer-column {
+    width: 50%;
   }
   .app-download-container {
     justify-content: center;
@@ -1196,7 +1217,7 @@ body {
   }
   .cover-section {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: 90vh;
     overflow: hidden;
   }
